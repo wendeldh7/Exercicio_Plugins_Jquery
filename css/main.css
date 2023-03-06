@@ -45,7 +45,7 @@ body {
     margin-bottom: 15px;
 }
 
-.login_body button {
+#bEnviar {
     height: 50px;
     width: 100%;
     color: #fff;
@@ -57,11 +57,22 @@ body {
     margin-bottom: 10px;
 }
 
-.login_body button:hover {
+#bEnviar:hover {
     background-color: #fc1722;
     cursor: pointer;
 }
 
 body {
     background-color: #000;
+}
+
+label {
+    color: #fff;
+}
+
+.error {
+    color: #fc1722;
+    display: block;
+    font-size: 12px;
+    margin: 3px 0 0 1px;
 }
