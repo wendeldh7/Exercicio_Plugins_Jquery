@@ -16,7 +16,9 @@
             <h2>Formulário</h2>
             <form>
                 <div class="input_box">
-                    <input type="text" for="nome" id="nome" name="nome" placeholder="Nome completo">
+                    <label>Nome:</label><br />
+                    <input type="text" id="itnome" class="campo" /><br />
+                    <div id="mensagem1" class="error">Digite um nome valido!</div>
                 </div>
 
                 <div class="input_box">
@@ -40,9 +42,7 @@
                 </div>
 
                 <div>
-                    <button class="submit">
-                        Enviar
-                    </button>
+                    <input type="submit" id="bEnviar" value="Enviar" class="boton"">
                 </div>
             </form>
         </div>
