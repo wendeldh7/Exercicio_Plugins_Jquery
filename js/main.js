@@ -1,39 +1,14 @@
-$('#telefone').mask('(00) 00000-0000')
+var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
 
-$('#cpf').mask('000-000-000-00')
+$(document).ready(function(){
+    $("bEnviar").click(function() {
+        var nome = $("#itnome").val;
+        var email = $("#itemail").val;
+        var telefone = $("#ittelefone").val;
 
-$('#cep').mask('00-000-000')
-
-$('form').validate({
-    rules: {
-        nome: {
-            required: true,
-        },
-        email: {
-            required: true,
-            email: true
-        },
-        telefone: {
-            required: true,
-        },
-        cpf: {
-            required: true,
-        },
-        endereco: {
-            required: true,
-        },
-        cep: {
-            required: true,
+        if(nome == ""){
+            $("#mensagem1").fadeIn();
+            return false;
         }
-    },
-    messages: {
-        nome: 'Por favor, insira o seu nome!'
-    },
-    messages: {
-        cpf: 'Por favor, insira o seu cpf certo!'
-    },
-    messages: {
-        cep: 'Por favor, insira o seu cep certo!'
-    }
-
-})
+    });
+});
