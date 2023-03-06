@@ -4,3 +4,13 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: block;
+    justify-content: center;
+}
