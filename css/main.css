@@ -70,3 +70,7 @@ label {
     color: #fff;
     font-family: 'Roboto', sans-serif;
 }
+
+.error {
+    color: #fc1722;
+}
