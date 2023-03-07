@@ -45,7 +45,7 @@ body {
     margin-bottom: 15px;
 }
 
-#bEnviar {
+button {
     height: 50px;
     width: 100%;
     color: #fff;
@@ -57,7 +57,7 @@ body {
     margin-bottom: 10px;
 }
 
-#bEnviar:hover {
+button:hover {
     background-color: #fc1722;
     cursor: pointer;
 }
@@ -68,13 +68,5 @@ body {
 
 label {
     color: #fff;
-    font-family: 'Roboto', sans-serif;
-}
-
-.error {
-    color: #fc1722;
-    display: block;
-    font-size: 12px;
-    margin: 3px 0 0 1px;
     font-family: 'Roboto', sans-serif;
 }
